@@ -3,7 +3,8 @@ const normalPerson = {
     lastName : 'Uddin',
     salary : 15000,
     getFullName: function(){
-        console.log(this.firstName, this.lastName);
+      fullName =  this.firstName + " " + this.lastName;
+      return fullName;
     },
     chargeBill : function(amount){
         this.salary = this.salary - amount;
@@ -12,4 +13,6 @@ const normalPerson = {
 }
 
 normalPerson.chargeBill(150);
+normalPerson.chargeBill(3000);
 console.log(normalPerson.salary);
+console.log(normalPerson.getFullName());
